@@ -2,6 +2,7 @@ package it.academy.service;
 
 import it.academy.dao.AppUserDao;
 import it.academy.model.AppUser;
+import it.academy.model.Car;
 import it.academy.model.Contract;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,4 +35,7 @@ public class AppUserService {
     public List<AppUser> getAll() {
         return appUserDao.findAll();
     }
+
+    @Transactional
+    public void delete (AppUser appUser) {appUserDao.delete(appUser);}
 }

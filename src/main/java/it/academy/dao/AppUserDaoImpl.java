@@ -30,10 +30,15 @@ public class AppUserDaoImpl implements AppUserDao{
             sessionFactory.getCurrentSession().saveOrUpdate(appUser);
         }
 
-        @Override
+    @Override
     public List<AppUser> findAll() {
         return sessionFactory.getCurrentSession().createQuery("from AppUser", AppUser.class).list();
     }
 
+    @Override
+    public void delete(AppUser appUser) {
+        AppUser loadedAppUser = sessionFactory.getCurrentSession().load(AppUser.class, appUser.getId());
+        sessionFactory.getCurrentSession().delete(loadedAppUser);
+    }
 }
 

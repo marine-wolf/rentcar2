@@ -12,4 +12,7 @@ public interface AppUserDao {
     void create(AppUser appUser);
 
     List<AppUser> findAll();
+
+    void delete(AppUser appUser);
+
 }
