@@ -20,7 +20,7 @@
     <td align="center"><c:out value="${car.color}"/></td>
     <td align="center"><c:out value="${car.vmotor}"/></td>
     <td align="center"><c:out value="${car.pricePerDay}"/></td>
-   <td align="center"><img src="/rentcar/image/${cars.carId}/photo.jpg" class="img-thumbnail"></td>
+   <td align="center"><img src="/rentcar/image/${car.carId}/photo.jpg" class="img-thumbnail"></td>
   </tr>
 
 </table>

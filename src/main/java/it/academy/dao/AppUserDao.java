@@ -13,6 +13,10 @@ public interface AppUserDao {
 
     List<AppUser> findAll();
 
+    List<AppUser> readAll();
+
     void delete(AppUser appUser);
+
+    AppUser findUserId (String id);
 
 }

@@ -14,11 +14,6 @@
        </c:forEach>
      </select>
   </div>
-  <!--<div class="mb-3">
-      <label for="car.carId" class="form-label">Car Id</label>
-      <input type="number" name="car.carId" class="form-control" id="car.carId" aria-describedby="nameHelp">
-      <div id="nameHelp" class="form-date">Enter car Id</div>
-    </div>-->
 
   <!-- Payment creation date -->
 

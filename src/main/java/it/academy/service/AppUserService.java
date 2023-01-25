@@ -16,9 +16,16 @@ public class AppUserService {
     @Autowired
     AppUserDao appUserDao;
 
+    @Transactional
     public List<AppUser> findUserByUsername(String username) {
         System.out.println("Search for user: " + username);
         return appUserDao.findByUserName(username);
+    }
+
+    @Transactional
+    public AppUser findUserId(String userId) {
+        System.out.println("Search for user: " + userId);
+        return appUserDao.findUserId(userId);
     }
 
     @Transactional

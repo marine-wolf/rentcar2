@@ -38,7 +38,7 @@ public class AddContractController {
     public String addContract(Contract contract) {
         System.out.println("Call addContract: " + contract);
         contractService.addNewContract(contract);
-        return "redirect:/contract-list.html";
+        return "redirect:/car-list.html";
 
     }
 

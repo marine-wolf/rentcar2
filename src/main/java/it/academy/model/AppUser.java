@@ -10,18 +10,22 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "app_user")
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class AppUser {
 
     @Id
-    @Column(name = "ID")
+    @Column(name = "userId")
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
-    private String id;
+    private String userId;
 
 
     @Column(name = "USER_NAME")
@@ -37,10 +41,13 @@ public class AppUser {
     @Column(name = "USER_ROLE")
     private String role;
 
+    @OneToOne(mappedBy = "appUser")
+    private Contract contract;
+
     @Override
     public String toString() {
         return "AppUser{" +
-                "id='" + id + '\'' +
+                "user id='" + userId + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +

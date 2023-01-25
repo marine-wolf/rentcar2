@@ -17,38 +17,16 @@ import java.util.Map;
         @Autowired
         private CarService carService;
 
-        @GetMapping("/car-show/{car.carId}.html")
-        public ModelAndView showCar(@PathVariable("car.carId") Integer carId) {
+        @GetMapping("/car-show/{carId}.html")
+        public String showCar(@PathVariable("carId") Integer carId, Model model) {
             System.out.println("Call car show controller");
             Car car = carService.getById(carId);
             System.out.println(car);
-            return new ModelAndView("car_show",
-                    Map.of("сar",car));
+            model.addAttribute("car", car);
+//            return new ModelAndView("car_show",
+//                    Map.of("сar",car));
+            return "car_show";
         }
-
-
-
-
-
-
-
-
-//        @GetMapping("/{carId}")
-//        public ModelAndView showCar(@PathVariable ("carId") int carId) {
-//          System.out.println("Call page of car");
-//            return new ModelAndView(
-//                    "car_show",
-//                    Map.of("car", carService.getById(carId))
-//            );
-//        }
-
-//        @ResponseBody
-//        @GetMapping("/image/{car.carId}/photo.jpg")
-//        public byte[] getImage(@PathVariable("car.carId") int carId) {
-//            System.out.println("Call getImage: " + carId);
-//            Car empl = carService.getById(carId);
-//            return empl.getCarPhoto().getPhoto();
-//        }
     }
 
 

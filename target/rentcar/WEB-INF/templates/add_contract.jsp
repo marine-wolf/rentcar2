@@ -12,11 +12,6 @@
        </c:forEach>
      </select>
   </div>
-  <!--<div class="mb-3">
-      <label for="car.carId" class="form-label">Car Id</label>
-      <input type="number" name="car.carId" class="form-control" id="car.carId" aria-describedby="nameHelp">
-      <div id="nameHelp" class="form-date">Enter car Id</div>
-    </div>-->
 
   <!-- Car received date -->
   <div class="mb-3">
@@ -32,15 +27,6 @@
     <div id="nameHelp" class="form-date">Enter car return date</div>
   </div>
 
-
-  <!-- Number of days of rental car -->
-
-  <!-- <div class="mb-3">
-      <label for="numberOfDays" class="form-label">Number of days of rental car</label>
-      <input type="number" name="numberOfDays" class="form-control" id="numberOfDays" aria-describedby="nameHelp">
-      <div id="nameHelp" class="form-date">Enter number of days of rental car</div>
-  </div> -->
-
    <!-- Сar contract status -->
 
    <label for="contractStatus" class="form-label">Car contract status</label>
@@ -50,6 +36,7 @@
    <option type = "text" value="NOT_CONFIRMED">NOT_CONFIRMED</option>
    </select>
 
+    <td>c:out  value="${contract.appUser.userId}"/></td>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

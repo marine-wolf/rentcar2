@@ -9,6 +9,7 @@ D:\work\rentcar2\src\main\java\it\academy\dao\CarDao.java
 D:\work\rentcar2\src\main\java\it\academy\dao\CarPhotoDao.java
 D:\work\rentcar2\src\main\java\it\academy\dao\PaymentDaoImpl.java
 D:\work\rentcar2\src\main\java\it\academy\web\AddCarController.java
+D:\work\rentcar2\src\main\java\it\academy\web\DeleteUserController.java
 D:\work\rentcar2\src\main\java\it\academy\dao\CarDaoImpl.java
 D:\work\rentcar2\src\main\java\it\academy\DataConfig.java
 D:\work\rentcar2\src\main\java\it\academy\service\CarService.java
@@ -23,6 +24,7 @@ D:\work\rentcar2\src\main\java\it\academy\web\AddContractController.java
 D:\work\rentcar2\src\main\java\it\academy\web\ContractListController.java
 D:\work\rentcar2\src\main\java\it\academy\model\Car.java
 D:\work\rentcar2\src\main\java\it\academy\servlet\ContractSearchServlet.java
+D:\work\rentcar2\src\main\java\it\academy\web\UserListController.java
 D:\work\rentcar2\src\main\java\it\academy\service\ContractService.java
 D:\work\rentcar2\src\main\java\it\academy\dao\AppUserDao.java
 D:\work\rentcar2\src\main\java\it\academy\service\SearchService.java

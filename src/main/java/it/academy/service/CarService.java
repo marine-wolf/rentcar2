@@ -29,6 +29,7 @@ public class CarService {
     public List<Car> getAll() {
         return carDao.findAll();
     }
+
     @Transactional
     public Car getById(int carId) {
         return carDao.findById(carId);

@@ -1,6 +1,7 @@
 it\academy\web\AddUserController.class
 it\academy\service\SearchService.class
 it\academy\model\Payment.class
+it\academy\web\DeleteUserController.class
 it\academy\dao\CarDao.class
 it\academy\service\CarService.class
 it\academy\web\CarShowController.class
@@ -22,6 +23,7 @@ it\academy\MysqlJdbcDataSource.class
 it\academy\web\PaymentListController.class
 it\academy\web\HomeController.class
 it\academy\security\WebSecurityConfig.class
+it\academy\web\UserListController.class
 it\academy\dao\AppUserDao.class
 it\academy\dao\ContractDao.class
 it\academy\web\AddPaymentController.class

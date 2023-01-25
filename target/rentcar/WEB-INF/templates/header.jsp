@@ -27,7 +27,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/rentcar/car-list.html">List all cars</a></li>
             <li><a class="dropdown-item" href="/rentcar/add-car.html">Add car</a></li>
-            <li><a class="dropdown-item" href="/rentcar/delete-car.html">Delete car</a></li>
+            <li><a  class="dropdown-item" href="/rentcar/delete-car.html">Delete car</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -86,25 +86,6 @@
       <security:authorize access="!isAuthenticated()">
         <a class="nav-link disabled">Welcome&nbsp;anonymous</a>
       </security:authorize>
-
-
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Select action with contracts
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/rentcar/add-contract.html">Add contract</a></li>
-            <li><a class="dropdown-item" href="/rentcar/add-payment.html">Add payment</a></li>
-            <li><a class="dropdown-item" href="/rentcar/contract-list.html">List all contracts</a></li>
-            <li><a class="dropdown-item" href="/rentcar/payment-list.html">List all payments</a></li>
-          </ul>
-        </li> -->
-
-
-<%--      <form class="d-flex" role="search" action="/rentcar/search.do" method="post">--%>
-<%--        <input class="form-control me-2" type="search" name="pname" placeholder="Search by producer" aria-label="Search">--%>
-<%--        <button class="btn btn-outline-success" type="submit">Search</button>--%>
-<%--      </form>--%>
 
   </div>
   </div>

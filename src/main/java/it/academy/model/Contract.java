@@ -37,9 +37,13 @@ public class Contract implements Serializable{
     @Column(name ="contractStatus")
     private String contractStatus;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "carId")
     private Car car;
+
+    @OneToOne
+    @JoinColumn(name = "userId")
+    private AppUser appUser;
 
     @OneToOne(mappedBy = "contract", cascade = CascadeType.ALL)
     private Payment payment;
@@ -52,6 +56,8 @@ public class Contract implements Serializable{
                 ", returnDate=" + returnDate +
                 ", contractStatus='" + contractStatus +'\'' +
 //                ", carId=" + car.getCarId() +'\'' +
+//                ", carId=" + appUser.getId() +'\'' +
+
                 '}';
     }
 }

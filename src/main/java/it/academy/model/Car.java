@@ -8,6 +8,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Getter
 @Setter
@@ -46,8 +47,8 @@ public class Car implements Serializable {
     @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
     private CarPhoto carPhoto;
 
-    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
-    private Contract contract;
+    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
+    private List<Contract> contracts;
 
 //    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL)
 //    private Payment payment;

@@ -44,7 +44,7 @@ public class AddPaymentController {
 //      System.out.println(file.getOriginalFilename() + ": " + file.getSize());
 
         paymentService.addNewPayment(payment);
-        return "redirect:/payment-list.html";
+        return "redirect:/car-list.html";
 
     }
 
